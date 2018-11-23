@@ -1,0 +1,130 @@
+---
+title: "Datapalooza Report"
+author: "Emma Afferton"
+date: "November 22, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Datapalooza: November 9, 2018
+
+Overall, Datapalooza was an event that drew together undergradutate researchers, graduate researchers, professors, and even those employed in the workforce that all had an underlying passion for understanding data science and analysis, and cared about best preparing for an increasingly data-driven world in the future. The day was divided into 4 main sessions: The first was a a Fireside chat between Philip Bourne and Jim Ryan. The second was a Research Highlights talk, in which several researchers in a given area presented their research in that field. There were several different sessions on different research topics that people could attended. The third session available to attend was a choice between various Skills Session, as well as a Tech Talk. The fourth session was a Keynote speaker. Throughout the entire day, there were many coffee and networking breaks built into the schedule.  To create the overall feel of interconnectedness between people who attended, each member who attended Datapalooza had a name tag with a code on the back of it. When you met with someone, such as during a coffee break, you were encouraged to add their "code" to an overall web that showed all the connections being made throughout the day. 
+
+I attended only the morning sessions of Datapalooza (Fireside Chat and Research Highlights) but I wanted to include in this report what I got out of the sessions I did end up attending. 
+
+
+
+## Fireside Chat with Phil Bourne and Jim Ryan
+
+
+Datapalooza began with a Fireside chat between Philip Bourne, the Stephenson Chair of Data Science and the Director of the UVA Data Science Institute, and Jim Ryan, President of the University of Virginia. Before welcoming Ryan to the stage, Bourne began the talk by describing the paradigms that currently exist that have led to the data revolution. Firstly, all aspects of society are made up of observations. Secondly, humans have been able to model our environment. Thirdly, computational power is currently accelerating on an exponential curve. Lastly, the world is increasingly becoming more data-driven. With these paradigms in mind, Bourne welcomed Ryan to the stage to chat about the role that data and data science could play in the University of Virginia. 
+
+Jim Ryan described UVA as a world class university that is meant to serve others. UVA strives to create a community of educational excellence while also providing service to the Charlottesville community, Virginia, and beyond. Ryan thinks that in any way that data is incorporated into the University, these values must be kept in mind. For example, UVA could use its own data to improve the community experience, or find new outlets of service. Ryan also mentioned how data science has the potential to bring expertise through being a cross-disciplinary subject. Namely, it initially has the potential to connect different fields of study, even those outside of a traditionally scientific field. For example, Ryan mentioned how data can be used to unlock information about K-12 education. As Ryan is a person who has a passion for bettering education itself, it makes sense that he would see using data science as for it's potential in improving education.
+
+Bourne and Ryan then talked about public versus private sectors being involved in data science. In terms of which would be most beneficial, the answer was the classic "it depends" - private and public interconnectedness can be beneficial, as long as the goal is to serve a public purpose or good, such as the values community and service. Bourne also stressed that if there is data out there that can potentially help people, it should be made public as soon as possible, and those who have such data should be open about it. Ryan asked him what he meant by "being open," and Bourne told a story that showcased why it is important for data to be accessible. He told of a college student who was diagnosed with brain cancer. This student decided that he wanted to volunteer in a lab at Duke University that was conducting research on the same type of cancer he had. However, when he went there, he realized that the lab has a lot of data that could prove beneficial in treating the cancer, but they were not sharing it outside of the lab! This was especially shocking to this student, given that the information they were holding back could be directly impactful to him and others suffering similar conditions. In response to this story, it is suggested that though requirements may exist to make data publically available, these requirements are not enforced, thus there needs to be a clear business model in place that enforces this data to be shared. One of the issues Bourne and Ryan note is that the private sector may have proprietary information, thus may not want to share their data. One example of this is with pharmaceutical companies. They all have developed models that are built on academic research. A lot of the models were developed separately, yet many of their processes are identical. However, since they keep this information proprietary, the companies hadn't realized they had separately developed similar models. 
+
+Another topic that Ryan and Bourne discussed was ethics. Especially in terms of data collection, vigilance is one of the first things that should be taught. It's important to note that although data is global, the policies and ethics surrounding data are not. Therefore, it is essential that as the capabilities of data are expanding, so should our ideas on how to govern data and laws surrounding data. They described how in the initial stages of developing laws surrounding data, a good way to create these laws is to reflect on how we use our own data! 
+
+One of the initial issues that they described in how we use our own data that it is estimated that a new journal article is published every 3 seconds, but half of those papers are never even read. The issue is therefore that there is academic information that is out there that could be really beneficial for people or other researchers to know, however it is never actually accessed by the people that it could be beneficial towards. Therefore, in the future, there needs to be a better way of disseminating the plethora of data that exists.
+
+Another issue they discussed was data science as a part of the educational and undergraduate experience. As on now, there are many students that are interested in studying it, but in the future, it may be expected that all students be versed in it in some regard. However, what Ryan emphasized is that when teaching data science, what is most important is not being able to work with the best dataset, but instead being able to ask the right questions about the data. Therefore, the future of data science education is teaching students how to think critically about the data itself. 
+
+Personally, I thought this chat was interesting and was a good analysis on the current state of data. However, I think that many of the topics they they talked about were very broad and vague, and Ryan did not go into details about how he could see the UVA specifically incorporating data science. If I had the chance, I would ask Ryan two questions: 
+
+1) How does he see UVA specifically incorporating data science into its undergraduate education? Specifically, how would it be incorporated across all of the schools outside of engineering, such as nursing or architecture? 
+
+2) How is the Data Science Institute at UVA currently working to teach its students how to think critically about data? 
+
+
+
+## Research Highlights: Machine Learning
+
+
+This session was divided into four talks by four different speakers on their research topics, all of which included Machine Learning in some regard. 
+
+
+
+#### OpenEnsembles: Ensemble Clustering in Python
+##### Kristen Naegle, Department of Biomedical Engineering, UVA
+
+Kristen Naegle, from the Department of Biomedical Engineering, gave highlights on the technique of ensemble clustering of data. She first introduced the idea of "clustering," which is an unsupervised learning technique to identify patterns in data. Building off of that definition, ensemble clustering is clustering in more than one way. 
+
+Kristen then went into details on clustering, describing some of the terms surrounding it. Given data, which are simply points in an N-dimensional space, a clustering algorithm can be used as a method of maximizing similarity in clustering methods. Clustering requires you to define how many data points you need and define a distance metric for them: however, you have to consider that as you are transforming the data, you are also modifying the distance metric. One issue that comes us with dimensional data is that people fail to use the same mentality of clustering 2D versus 3D data, thus, coming up with different ways to recluster that data is needed. Another issue that arises with clustering is that clustering algorithms do a poor job working in greater than 20 dimensions: at this point, it is difficult to tell how close and far data points are from one another. Her work, OpenEnsembles, is therefore looking at ways to improve clustering of data through ensemble clustering. 
+
+Prof. Naegle included a GitHub link that went into details on her code. In summary, the method for clustering can be reproduced in a short amount of code. She and her teams took data and clusters it a hundred times in order to come up with a hard partition for the data to get it into clusters. It essentially includes three classes: the data class, the clustering class, and the validation class. A For-Loop is used to loop over the data, and kmeans is used to build up many solutions to the data, which allows it to be clustered. Essentially, because the code for clustering is available through GitHub, it is accessible to all to use. 
+
+Overall, I thought this presentation was interesting in introducing us into clustering data, an essential aspect of machine learning. It was also refreshing to learn that this method of clustering is available to all through GitHub. I only checked out the GitHub link after Datapalooza, and that's how I learned that is was a publicly available code. If I were to ask Prof. Naegle two questions, I would ask her: 
+
+1) As a BME professor, how can you see ensemble clustering being beneficial for medical data?
+
+2) How can researches who develop models for machine learning similarly share their findings or methods, and how successful have you seen your methods in being accessible to many people thus far?
+
+
+
+#### Automatic Quantifiction of Cardiac MRI For Hypertrophic Cardiomyopathy
+##### Yetkaterina Gilbo, Department of Biomedical Engineering, UVA
+
+Katya Gilbo is a second year Masters student in biomedical engineering, and her studies focus on hypertrophic cardiomyopathy (HCM), which is the most common myogenic heart disease and the most frequent cause of sudden death in young adults. However, this condition is very difficult to prognose. A current worldwide-research efforts involving HCM is THE HCM Registry, which involved 40 research sites around the U.S., Canada, and Europe that have to goal of being able to identify identity markers associated with HCM, and use big data to do so. An ending goal would be for doctors to be able to look at a scan of someone's brains and be able to prognose HCM. Katya's research therefore looks at using machine learning to look at MRI scans and be able to prognose based on images in those scans. Specifically, she is looking at using convolutional neural networks (CNNs) to look at these scans and provide guidance to those humans looking at these images. 
+
+Katya then gave highlights in her research methods. Overall, the goal is to use machine learning to develop a model to extract specific features from MRI images. She mentioned how MRI is prone to poor quality and a lot of artifacts, meaning that a lot of the MRI data must be preprocessed. When looking at images, she described how the model should be able to look at multiple layers of the data in order to accurately develop a model. Her model showed that after the 4th and 5th layer, there was about a 50% success rate in term of accuracy of the model after training.  One method she described was given a small dataset, using the output of an early layer as the base of the model for future layers to extract features from the image. Another method she talked about was being able to classify different blood cell shapes: she and her fellow researchers trained a model from scratch and relied on using cleaned data.
+
+The current result of her research is a 30 layer CNN that has been trained from scratch. Katya mentioned that one of the drawbacks of her research is that a small dataset has been used for the model, so its accuracy may not be aptly reflected. However, with this in mind, their research shows promise in being able to make medical prognoses based on images. 
+
+As a biomedical engineering major, I found Katya's talk fascinating, and it was really interesting to see how machine learning and data science could be sued to help solve medical problems. She also showed many pictures in her presentation, which was helpful in understanding her particular application of machine learning. If I were to ask Katya two questions, I would ask her: 
+
+1) What are you and your research team's strategies to overcome the issue of training using small datasets? Additionally, how can those in The HCM Registry help each other in working together to develop and train models? 
+
+2) How can you convince medical professionals who are diagnosing people to trust a prognosis made through machine learning? 
+
+
+
+#### Plagiarism Detection Using Semantic Analysis
+##### Samarth Singh, Department of Engineering Systems and Environment, UVA
+
+Samarth is a first year graduate student in the Department of Engineering Systems and the Environment. His application of data science and machine learning focusses in detecting plagiarism, which is when someone uses another person's ideas without giving them due credit - essentially, it is a form of theft of intellectual property. Overall, he talked about how current technology exists that can detect plagiarism, however, there are some issues in the accuracy of these methods. Therefore, the main question his research sets out to answer is how different machine-learning based methods can applied to plagiarism detection technology to make it more robust.
+
+Samarth talked about some of the current technology that exists for plagiarism detection, and some of the methods it uses. Some of the most basic methods are string, substring, and subsequence matching. Another example is the "bag of words" model, which just looks at all of the words that appear in a document to see how it matches to another document. Additionally, these technologies can look for context-based grammar and backend clustering for faster retrieval, which looks at what other documents the paper is related. Similarly, another method is to simply look at the keywords that appear between papers. 
+
+His overall project design for improvements includes the idea that given a document, you can extract the most important keywords using topic modelling, and then you can cluster documents based on the features extracted from them. This would improve the issue of simply being able to find a document that paper may have plagiarized from. Another issue that exists is that often, plagiarism detection technology can match words that are similar between two papers, but out of context. For example, a first paper could say "Red is good, blue is bad" and a second paper could say "Blue is good, red is bad," and the plagiarism technology would match it us as plagiarism because all of the same words are used between the sentences, even though they mean entirely different things. Samarth plans to address this issue by implementing object-action paring into the algorithm, which would match a person or object up to their respective actions. Samarth gave an example sentence to describe this. In the sentence: 
+
+"Mike teaches rock-climbing after probability class. He practices it in the weekend. He and Will also play soccer sometimes. "
+
+The object-action pairing would match "Mike" up with "teach", "rock-climbing", "probability class", "practice", "play", and "soccer" and would match "Will" with "play" and "soccer."
+
+This research is beneficial, as it will help improve the ability to detect plagiarism, especially in scientific research papers. However, some of the issues he sees in the future is being able to train the algorithms he develops with small datasets, and a future steps that needs to be taken is being able to detect plagiarism of a paper that was translated from another language.
+
+I thought Samarth's presentation was interesting and he gave very clear examples of how his research could improve plagiarism detection technology. If I were to ask Samarth two questions, I would ask him: 
+
+1) Outside of an academic setting, how do you see this technology as being useful in the workforce?  
+
+2) Although this technology exists to help detect plagiarism, how do you think the culture needs to change in the scientific research community to simply discourage people from even wanting to plagiarize other research papers?
+
+
+
+#### Deepracing: Teaching Autonomous Driving Vehicles to Handle Edge Cases in Traffic
+##### Madhur Behl, Department of Computer Science and Engineering Systems and Environment, UVA
+
+Madhur Behl, a professor of Computer Science, Engineering, and the Environment, gave a presentation on his research of how self-driving cars can deal with unexpected situations. 
+
+Behl first described the basics that causes a self-driving car to operate. The first is simply localization and mapping: a car needs to be able to detect where it currently is. The second is scene understanding: a car needs to be able to make sense of everything in its environment, and be able to detect what things in its environment are, such as identifying the road, a stop sign, people, etc.. Both of these steps require deep-learning machine learning methods. The third requirement is trajectory planning and control: the car needs to determine where to go next and how to steer and operate. The last requirement is human interaction: aside from functioning as a car, the car needs to be able to convey its intent to the passenger and everyone else it may affect in order for humans to know what they car is intending to do next (stop, go, accelerate, etc.). 
+
+Behl talked about how the training data is really what is key to developing high machine intelligence. One example he gave of an issue that a self-driving car may run into was of a car parked outside of a Raman Noodle place: the sign outside of the restaurant looked like prohibitory traffic sign. Because restaurant sign looked very similar to a driving sign, the car recognized it as a traffic sign, and it did not drive in the direction of the sign. This is a good example of an "unexpected situation" or an "Edge case" that may need to be accounted for in training data for autonomous driving cars. Therefore, using racing to train the self-driving cars developing in virtual game may expose them to greater scenarios of edge cases, thus making them more prepared for unexpected situations in the real world. 
+
+Behl then showed some examples of the virtual "game" that shows a car racing that would be used to train autonomous cars. In the game, a car is driving along a racetrack and encounters different situations to learn how to handle different driving scenarios, including being able to track lanes and other vehicles. The track built is a spatial one that can be frequently changed: the car in the game therefore has to adapt to the changing spatial plane. The way that this is done is through cognitive neural networks and end-to-end deep learning modelling. An example that was shown was two cars that were racing each other. One car sees the other car racing, and learns that it is faster to take the inside route of the track rather than the outside route, thus in the game, the car learns to pass another car by maneuvering on the inside of it. This shows promise in the car being able to use neural networks to learn about the other car's driving. Another application of this technology for commercial cars would be to use the game to train a car to deal with a drunk driver in another car. Behl showed an example in the game of one car learning to drive behind another car of a "drunk driver," whose actions were unpredictable. I personally think this application will be very beneficial in the transition stage of autonomous cars, where some people may be using them in the future while others are not.  
+
+Behl finished up his presentation by talking about how the team had built small, remote-control sized cars that participated in an autonomous racing competition, and the car his team built had actually won! This is a promising result that demonstrated that the technology he is researching shows potential to be applied to commercial cars in the future.  
+
+I though this presentation was interesting because it showed a very tangible application of machine learning: autonomous driving. As this technology may be widely available in the future and could affects a great number of people, I think it is important to do a very in-depth research in ensuring utmost safety in these vehicles. I would ask Behl: 
+
+1) How are the different "edge cases" determined for training in the game, and how can a programmer make sure that as many cases as possible and plausible are covered? 
+
+2) How can those engineers developing safer autonomous driving vehicles convince the public that they are safe, based on their research?
+
+
+### Closing Thoughts
+
+I enjoyed the two sessions of Datapalooza that I attended. I though the fireside chat was a good way to open the day, since it was focused more broadly on the values and ethics that should be kept in mind with data science. I also thought the research highlights were a good way to follow up the chat, as it was a good way look into the specific examples of applications in data science. It is interesting to see the vast applications that data science has to offer, from medical research to autonomous racing. I similarly thought it was intriguing that Ryan and Bourne talked about how in the future, it would be important to include data science into the academic curriculum and expose more people to it. I think it is important to hold events such as these for that very reason: even though I have had experience in data science through this class, it was eye-opening to see how else data science could be used in the world, and it was a great way for me to learn a little bit more about data science. I thought Datapalooza was worthwhile to attend and would recommend to anybody interested in learning more about data science to attend next year.
